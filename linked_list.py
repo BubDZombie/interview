@@ -28,7 +28,7 @@ class LinkedList():
 			self.head = node
 		else:
 			current = self.head
-			while(current is not None and current.next is not None):
+			while(current and current.next):
 				current = current.next
 			current.next = node
 
