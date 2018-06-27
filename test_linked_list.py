@@ -11,6 +11,15 @@ from linked_list import LinkedList
 
 
 class TestLinkedList(unittest.TestCase):
+	def test_queue_methods(self):
+		queue = LinkedList()
+		queue.enqueue(1)
+		queue.enqueue(2)
+		queue.enqueue(3)
+		self.assertEqual(queue.dequeue(), 1)
+		self.assertEqual(queue.dequeue(), 2)
+		self.assertEqual(queue.dequeue(), 3)
+
 	def test_stack_methods(self):
 		stack = LinkedList()
 		stack.push(1)
